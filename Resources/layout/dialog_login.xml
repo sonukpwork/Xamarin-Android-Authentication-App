@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:minWidth="300dp"
+    android:minHeight="330dp"
+    android:background="#DEDEDC">
+    
+    <EditText
+        android:id="@+id/tb_DialogEmail"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:background="@drawable/edit_text_style"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="45dp"
+        android:hint="Enter Email"
+        android:paddingLeft="10dp"
+        android:textColor="#000"
+    />
+
+
+    <EditText
+        android:layout_below="@id/tb_DialogEmail"
+        android:inputType="textPassword"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:background="@drawable/edit_text_style"
+        android:id="@+id/tb_DialogPassword"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:hint="Enter Password"
+        android:paddingLeft="10dp"
+        android:textColor="#000"
+    />
+    
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tb_DialogPassword"
+        android:layout_marginTop="50dp">
+
+        <Button
+            android:text="Login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnDialogLogin"
+            android:background="@drawable/button_login_style"
+            android:textSize="20dp"
+            android:textColor="#fff"
+            android:textStyle="bold"
+            android:paddingLeft="5dp"
+            android:paddingBottom="5dp"
+            android:paddingRight="5dp"
+            android:paddingTop="2dp"
+            android:height="70dp"
+            android:layout_marginLeft="30dp"
+            android:layout_centerHorizontal="true"
+        />
+    
+    </RelativeLayout>
+</RelativeLayout>
